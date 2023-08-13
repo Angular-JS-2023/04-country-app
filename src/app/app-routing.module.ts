@@ -9,6 +9,13 @@ const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'contact', component: ContactPageComponent },
   { path: 'about', component: AboutPageComponent },
+
+  // Carga perezosa
+  {
+    path: 'countries',
+    loadChildren: () => import('./countries/countries.module').then(m => m.CountriesModule)
+  },
+
   { path: '**', redirectTo: '' },
 ];
 
