@@ -1,0 +1,34 @@
+
+<h2>Países</h2>
+<hr>
+
+<ul class="list-group">
+
+  <!-- Coloca el nombre del path a mostrar routerLink -->
+  <!-- Activa el link donde se esta usando routerLinkActive="active" -->
+  <!-- Funciona para decir que la ruta path sea exactamente igual [routerLinkActiveOptions]="{ exact: true }" -->
+
+  <li
+    routerLink=""
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="list-group-item">
+    Home Page
+  </li>
+
+  <li
+    routerLink="about"
+    routerLinkActive="active"
+    class="list-group-item">
+    About Page
+  </li>
+
+  <li
+    routerLink="contact"
+    routerLinkActive="active"
+    class="list-group-item">
+    Contact Page
+  </li>
+
+</ul>
+
